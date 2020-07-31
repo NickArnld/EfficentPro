@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top" id="topNav">
+        <a class="navbar-brand" href="#">Printing Company</a>
+
+        <div class="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="quoteInfo">
+        <h1 class="header">Get an Instant Quote </h1>
+        <p>Please fill out the information below regarding your desired printed fixture</p>
+
+    </div>
+    <div id="quoteForm" >
+        <!-- things on the form -->
+        <!-- Max Height -->
+        <div class="form-group">
+            <label for="">Max Part Height</label>
+            <input id="q1" type="number" step="0.01" max="">
+            <select id="units1" name="Units" class="units">
+                <option value="in">in</option>
+                <option value="mm">mm</option>
+            </select>
+        </div>
+        <!-- Max Width -->
+        <div class="form-group">
+            <label for="">Max Part Width</label>
+            <input id="q2" type="number" step="0.01" max="">
+            <select id="units2" name="Units" class="units">
+                <option value="in">in</option>
+                <option value="mm">mm</option>
+            </select>
+        </div>
+        <!-- Part volume -->
+        <div class="form-group">
+            <label for="">Part Volume</label>
+            <input id="q3" type="number" step="0.01">
+            <select id="units3" name="Units" class="units">
+                <option value="in">in</option>
+                <option value="mm">mm</option>
+            </select>
+        </div>
+        <!-- number of parts -->
+        <div class="form-group">
+            <label for="">Amount of Parts </label>
+            <input id="q4" type="number" >
+            <select id="units4" name="Units" class="units">
+                <option value="in">in</option>
+                <option value="mm">mm</option>
+            </select>
+        </div>
+        <button id="quoteSubmit" class="btn quoteBtn blueBtn">Submit</button>
+    </div>
+    <!-- Form Outputs -->
+    <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="">Quote</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn blueBtn">Submit Order?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Lead Time/Money/ option to send us an email to place an order -->
+    <!--  -->
+    <nav class="navbar navbar-expand-sm" id="botNav">
+        <p style="color: white;">footer</p>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
